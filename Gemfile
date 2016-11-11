@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#
+gem 'pygments.rb'
+# Markdown to XHTML parser
+gem 'redcarpet'
+# foundation gem
 gem 'foundation-rails'
 gem 'jquery-turbolinks'
 # .env stuff
