@@ -1,0 +1,45 @@
+<section class="format-about-me">
+  <%= image_tag('headshot.jpg', :alt => "headshot", :title => "headshot") %>
+    <p>
+      Hello! My name is Rachel Pavilanis. I am an aspiring software developer, attending the Seattle-based <a href="http://www.adadevelopersacademy.org">Ada Developer's Academy</a> as a member of Cohort 6. Ada Developer's Academy is a year-long software development training program, with six months of intensive in-class work followed by a five month internship at a sponsoring Seattle-based company. In this program, I am learning Ruby, Ruby on Rails, JavaScript, and HTML/CSS. I am also gaining practical experience working on project teams and a strong foundation in computer science fundamentals. I will graduate in July of 2017, and will then be working as a full-stack software developer.
+    </p>
+    <p>
+      Prior to this new venture, I worked in the field of school psychology for five years, providing school-based school psychology support while also adding district responsibilities like Positive Behavior Interventions and Support (PBIS) Coach and Preschool Transition Coordinator.
+    </p>
+    <p>
+      I am originally from Michigan, but I have lived in the Eugene, Oregon area for approximately eight years, with my partner and two small dogs.  In my spare time, I love to read fantasy novels, explore the beautiful Pacific Northwest, and <a href = "http://www.soundcloud.com/rachel-pavilanis">write/record songs</a>.
+    </p>
+</section>
+
+<hr>
+
+<section class="article-format">
+  <h2> My Work </h2>
+
+  <article>
+    <h3> FarMar </h3>
+    <%=link_to image_tag('farmar.png', :alt => "farmar image", :title => "farmar image"), "https://github.com/rpavilanis/FarMar" %>
+  </article>
+
+  <article>
+    <h3> Project 2 </h3>
+    <a href="/content/portfolio.html"><img src="http://placecage.com/200/200" alt="portfolio image"></a>
+  </article>
+
+  <article>
+    <h3> Project 3 </h3>
+    <a href="/content/portfolio.html"><img src="http://placecage.com/200/200" alt="portfolio image"></a>
+  </article>
+</section>
+
+<hr>
+
+<section class="article-format">
+  <h2> Recent Posts </h2>
+    <% @posts.each do |post| %>
+      <article>
+      <h3><a href='#anchor1'> <%= link_to post.title, post %> </a></h3>
+      <h4> <%= post.created_at.strftime("%A, %b, %d") %> </h4>
+      </article>
+    <% end  %>
+</section>
