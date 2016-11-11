@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-#
+# friendly_id = permalinks
+gem 'friendly_id'
+# color code
 gem 'pygments.rb'
 # Markdown to XHTML parser
 gem 'redcarpet'
