@@ -27,7 +27,6 @@
   <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
     <i class="fa fa-google-plus"></i>
   </a>
-  <%= render 'disqus' %>
 </div>
 
 <%= link_to "Edit", edit_project_path(@project) %>
