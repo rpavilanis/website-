@@ -1,0 +1,36 @@
+
+<% @posts.each do |post| %>
+  <div class="blog-format">
+    <p><%= post.created_at.strftime("%A, %b, %d") %></p>
+    <p><%= link_to post.title, post %></p>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<aside>
+      <section>
+        <h2>Hello there!</h2>
+        <img src="../assets/images/kayak.jpg">
+        <p>
+          My name is Rachel Pavilanis.  I hope you enjoy reading my blog.
+        </p>
+      </section>
+      <section>
+        <h2>Recent Posts</h2>
+        <ul>
+          <li><a href=#anchor1> Weeks 4-7 of Ada </a></li>
+          <li><a href=#anchor2> First Month at Ada </a></li>
+          <li><a href=#anchor3> Software Development and SchooL Psychology </a></li>
+          <li><a href=#anchor4> Ada Acceptance </a></li>
+        </ul>
+      </section>
+    </aside>
