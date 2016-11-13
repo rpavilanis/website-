@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#pagination
+gem 'will_paginate'
 # friendly_id = permalinks
 gem 'friendly_id'
 # color code
