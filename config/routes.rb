@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :projects
+
+# won't get routing errors - will redirect to home for any pages don't have access to
+  get '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
