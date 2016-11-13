@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+#devise
+gem 'devise'
 #pagination
 gem 'will_paginate'
 # friendly_id = permalinks
