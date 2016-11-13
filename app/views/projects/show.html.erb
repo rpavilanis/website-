@@ -1,2 +1,34 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<article class="blog-format">
+<div>
+    <a name="anchor1"></a>
+    <h4><%= @project.created_at.strftime("%A, %b, %d") %> </h4>
+    <h3><%= @project.title %></h3>
+</div>
+
+<div>
+    <%= markdown @project.description %>
+  <div class="button-wrapper">
+    <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %></a>
+  </div>
+</div>
+</article>
+
+<div id="share_box">
+  <p>Share <%= @project.title %></p>
+  <!-- Twitter -->
+  <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <!-- Facebook -->
+  <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <!-- Google Plus -->
+  <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+    <i class="fa fa-google-plus"></i>
+  </a>
+  <%= render 'disqus' %>
+</div>
+
+<%= link_to "Edit", edit_project_path(@project) %>
+<%= link_to "Destroy", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete me?" } %>
