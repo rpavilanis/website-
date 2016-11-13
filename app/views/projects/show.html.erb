@@ -13,6 +13,13 @@
 </div>
 </article>
 
+<% if user_signed_in? %>
+  <div id="admin-links">
+    <%= link_to "Edit", edit_project_path(@project) %>
+    <%= link_to "Destroy", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete me?" } %>
+  </div>
+<% end  %>
+
 <div id="share_box">
   <p>Share <%= @project.title %></p>
   <!-- Twitter -->
@@ -28,6 +35,3 @@
     <i class="fa fa-google-plus"></i>
   </a>
 </div>
-
-<%= link_to "Edit", edit_project_path(@project) %>
-<%= link_to "Destroy", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete me?" } %>

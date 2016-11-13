@@ -180,13 +180,34 @@ div {
   margin-left: auto;
   margin-right: auto;
 }
+#admin-links {
+  border-top: 1px solid border;
+  border-bottom: 1px solid border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+#admin-links a {
+  color: light;
+  margin 0 1em;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 
 
 /*********************************************/
 /* MAIN BODY SECTIONS - MAIN PORTFOLIO PAGE */
 /********************************************/
 
-
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+}
 
 
 
