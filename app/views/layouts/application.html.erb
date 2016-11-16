@@ -24,10 +24,9 @@
 
       <nav class="navigation-container">
         <ul>
-          <li><h1><%= link_to "Portfolio", projects_path %></h1></li>
           <li><h1><%= link_to "Blog", posts_path %></h1></li>
           <li><%=link_to image_tag('logo3.png', :alt => "logo", :title => "logo"), root_path %></li>
-          <li><h1><a href ="about.html"> About </a></h1></li>
+          <li><h1><%= link_to "Portfolio", projects_path %></h1></li>
         <% if user_signed_in? %>
           <li><h1><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></h1></li>
         <% end %>

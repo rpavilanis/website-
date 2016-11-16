@@ -1,7 +1,7 @@
 <section class="format-about-me">
-  <%= image_tag('headshot.jpg', :alt => "headshot", :title => "headshot") %>
+  <%= image_tag('headshot2.png', :alt => "headshot", :title => "headshot") %>
     <p>
-      Hello! My name is Rachel Pavilanis. I am an aspiring software developer, attending the Seattle-based <a href="http://www.adadevelopersacademy.org">Ada Developer's Academy</a> as a member of Cohort 6. Ada Developer's Academy is a year-long software development training program, with six months of intensive in-class work followed by a five month internship at a sponsoring Seattle-based company. In this program, I am learning Ruby, Ruby on Rails, JavaScript, and HTML/CSS. I am also gaining practical experience working on project teams and a strong foundation in computer science fundamentals. I will graduate in July of 2017, and will then be working as a full-stack software developer.
+      Hello! My name is Rachel Pavilanis. I am an aspiring software developer, attending the Seattle-based <a href="http://www.adadevelopersacademy.org">Ada Developer's Academy</a> as a member of Cohort 6. Ada Developer's Academy is a year-long software development training program, with six months of intensive in-class work followed by a five month internship at a sponsoring Seattle-based company. In this program, I am learning Ruby, Ruby on Rails, JavaScript, and HTML/CSS. I am also gaining practical experience working on project teams and a strong foundation in computer science fundamentals. I will graduate in July of 2017, and will then be working as a full-stack software developer.  See my resume <a href="https://gist.github.com/rpavilanis/0d783da551eda6e65e57">here.</a>
     </p>
     <p>
       Prior to this new venture, I worked in the field of school psychology for five years, providing school-based school psychology support while also adding district responsibilities like Positive Behavior Interventions and Support (PBIS) Coach and Preschool Transition Coordinator.
@@ -17,7 +17,7 @@
   <h2> Recent Projects </h2>
     <% @projects.each do |project| %>
       <article>
-      <h3>> <%= link_to project.title, project %> </h3>
+      <h3> <%= link_to project.title, project %> </h3>
       <h4> <%= project.created_at.strftime("%A, %b, %d") %> </h4>
       </article>
     <% end  %>

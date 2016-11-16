@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
-#devise
+# add photos
+gem 'paperclip'
+# login features
 gem 'devise'
-#pagination
+# pagination
 gem 'will_paginate'
 # friendly_id = permalinks
 gem 'friendly_id'
@@ -50,6 +52,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'better_errors'
 end
 
 group :development do
