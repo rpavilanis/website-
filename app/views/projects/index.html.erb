@@ -1,5 +1,6 @@
 <% @projects.each do |project| %>
   <div class="blog-format">
+    <%= image_tag project.image.url(:thumb) %>
     <p><%= project.created_at.strftime("%A, %b, %d") %></p>
     <p><%= link_to project.title, project %></p>
   </div>
