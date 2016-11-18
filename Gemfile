@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'aws-sdk'
 # add photos
 gem 'paperclip'
 # login features
