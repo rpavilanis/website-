@@ -1,7 +1,7 @@
 
 <% @posts.each do |post| %>
   <div class="blog-format">
-    <%= image_tag post.image.url(:thumb) %>
+    <%= image_tag post.picture.url(:thumb) %>
     <p><%= post.created_at.strftime("%A, %b, %d") %></p>
     <p><%= link_to post.title, post %></p>
   </div>
