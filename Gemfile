@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+# add photos
+gem 'paperclip'
 # login features
 gem 'devise'
 # pagination
