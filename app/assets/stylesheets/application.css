@@ -156,6 +156,11 @@ section article {
   margin: 0 4% 0 4%;
 }
 
+article.column {
+  margin: 3em 0 3em 0;
+  padding: 0 3em 0 3em;
+}
+
 /************************************/
 /* MAIN BODY SECTION - BLOG */
 /************************************/
