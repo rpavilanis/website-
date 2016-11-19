@@ -13,10 +13,10 @@
 
 <hr>
 
-<section class="article-format">
+<section class="row small-up-1 medium-up-2 large-up-3">
   <h2> Recent Projects </h2>
     <% @projects.each do |project| %>
-      <article>
+      <article class="column">
       <%= image_tag project.picture.url(:thumb) %>
       <h3> <%= link_to project.title, project %> </h3>
       <h4> <%= project.created_at.strftime("%A, %b, %d") %> </h4>
@@ -26,10 +26,10 @@
 
 <hr>
 
-<section class="article-format">
+<section class="row small-up-1 medium-up-2 large-up-3">
   <h2> Recent Posts </h2>
     <% @posts.each do |post| %>
-      <article>
+      <article class="column">
       <%= image_tag post.picture.url(:thumb) %>
       <h3><a href='#anchor1'> <%= link_to post.title, post %> </a></h3>
       <h4> <%= post.created_at.strftime("%A, %b, %d") %> </h4>
