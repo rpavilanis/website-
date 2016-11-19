@@ -87,5 +87,5 @@ Rails.application.configure do
     :url => ":s3_host_name"                        # Added entry
     # s3_region: ENV.fetch('AWS_REGION'),
   }
-}
+
 end
