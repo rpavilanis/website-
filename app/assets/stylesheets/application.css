@@ -105,7 +105,7 @@ a:link {
 /************************************/
 /* MAIN BODY SECTION - INDEX.HTML */
 /************************************/
-body {
+/*body {
   margin-left: .5%;
   margin-right: .5%;
 }
@@ -116,14 +116,14 @@ h2 {
   text-align: left;
   /*width: 30%;*/
   margin: 5px 2px 5px 2px;
-}
+}*/
 
 /*.blog-images {
   padding: 5%;
   height: 175px;
 }*/
 
-.format-about-me {
+/*.format-about-me {
   /*height: 300px;*/
   /*width: 100%;*/
 }
@@ -133,7 +133,7 @@ h2 {
   float: left;
   width: 20%;
   padding-left: 5%;
-}
+}*/
 /*
 .format-about-me p {
   float: right;
@@ -147,7 +147,7 @@ h2 {
   vertical-align: top;
 }*/
 
-.article-format {
+/*.article-format {
   text-align: center;
 }
 
@@ -159,12 +159,12 @@ h2 {
 article.column {
   margin: 3em 0 3em 0;
   padding: 0 3em 0 3em;
-}
+}*/
 
 /************************************/
 /* MAIN BODY SECTION - BLOG */
 /************************************/
-div {
+/*div {
   width: 70%;
   padding: 0;
   margin: 0;
@@ -184,7 +184,7 @@ div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 #admin-links {
   border-top: 1px solid border;
   border-bottom: 1px solid border;
