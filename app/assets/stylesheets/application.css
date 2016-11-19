@@ -124,22 +124,22 @@ h2 {
 }
 
 .format-about-me {
-  height: 300px;
-  width: 100%;
+  /*height: 300px;*/
+  /*width: 100%;*/
 }
 
 .format-about-me img {
   border-radius: 50%;
   float: left;
-  width: 25%;
+  width: 20%;
   padding-left: 5%;
 }
-
+/*
 .format-about-me p {
   float: right;
   width: 60%;
   padding: 0 5% 0 5%;
-}
+}*/
 
 /*section article {
   display: inline-block;
