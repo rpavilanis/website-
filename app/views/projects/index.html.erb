@@ -1,11 +1,11 @@
 <div class="row small-up-1 medium-up-2 large-up-3">
 
   <% @projects.each do |project| %>
-    <div class="column">
-      <%= image_tag project.picture.url(:medium) %>
+    <article class="column">
+      <%= link_to image_tag(project.picture.url(:medium)), project %>
       <p><%= project.created_at.strftime("%A, %b, %d") %></p>
       <p><%= link_to project.title, project %></p>
-    </div>
+    </article>
   <% end %>
 
 </div>

@@ -1,10 +1,10 @@
 <div class="row small-up-1 medium-up-2 large-up-3">
   <% @posts.each do |post| %>
-    <div class="column">
-      <%= image_tag post.picture.url(:medium) %>
+    <article class="column">
+      <%= link_to image_tag(post.picture.url(:medium)), post %>
       <p><%= post.created_at.strftime("%A, %b, %d") %></p>
       <p><%= link_to post.title, post %></p>
-    </div>
+    </article>
   <% end %>
 </div>
 <%= will_paginate @posts %>
