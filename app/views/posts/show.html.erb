@@ -1,8 +1,14 @@
-<article class="blog-format center-image">
+<article class="row center-image">
   <%= image_tag @post.picture.url(:large) %>
-  <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
-  <h3 class="title-format"><%= @post.title.upcase %></h3>
-  <p><%= markdown @post.content %></p>
+
+  <div class="small-3 columns title-format">
+    <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
+    <h3><%= @post.title.upcase %></h3>
+  </div>
+
+  <div class="small-9 columns">
+    <p><%= markdown @post.content %></p>
+  </div>
 </article>
 
 <% if user_signed_in? %>

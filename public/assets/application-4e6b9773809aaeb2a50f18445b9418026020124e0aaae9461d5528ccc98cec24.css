@@ -1,0 +1,378 @@
+@import url("foundation.css");
+@import url("foundation-icons.css");
+@import url("foundation/components/visibility");
+@import url("https://fonts.googleapis.com/css?family=Economica|Lato");
+@import url("pygments");
+/************************************/
+/* NAVIGATION BAR AND HEADER SECTION */
+/************************************/
+/* line 11, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+body {
+  margin-left: .5%;
+  margin-right: .5%;
+  font-family: 'Lato';
+}
+
+/* line 17, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+p, h4, h5 {
+  font-family: 'Lato';
+}
+
+/* line 21, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+h1, h2, h3 {
+  font-family: 'Economica';
+}
+
+/* line 25, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+div article {
+  margin: 3em 0 3em 0;
+  padding: 0 3em 0 3em;
+}
+
+/* line 30, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 36, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container li {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+/* line 42, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*header section {
+  background-color: #b24569;
+}*/
+/* line 51, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container {
+  margin-left: 2.5%;
+  margin-right: auto;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  /*position: fixed;*/
+  /*background-color: #fff796;*/
+}
+
+/* line 61, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li {
+  list-style-type: none;
+  padding: 0 2% 0 2%;
+  display: inline-block;
+}
+
+/* line 67, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container ul {
+  padding: 0 0 2% 0;
+  margin: 0;
+}
+
+/************************************/
+/* LINKS */
+/************************************/
+/* line 76, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li a {
+  color: #000000;
+  font-size: 75%;
+  font-family: 'Economica';
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 84, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container img {
+  padding-left: 1.75%;
+}
+
+/* line 88, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container a {
+  padding: 0 5px 0 5px;
+}
+
+/* line 92, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li a:hover {
+  /*color: #ff7ca7;*/
+  color: #b24569;
+}
+
+/* line 97, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+a:hover {
+  /*color: #c98f8f;*/
+  color: #4fb1cc;
+}
+
+/*a:visited {
+  color: #000000
+}*/
+/* line 106, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 111, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.project_button {
+  background: highlight;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+/* line 119, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+
+/* line 124, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+  /************************************/
+  /* MAIN BODY SECTION - INDEX.HTML */
+  /************************************/
+  /*h2 {
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    text-align: left;
+    width: 30%;
+    margin: 5px 2px 5px 2px;
+  }
+  
+  .blog-images {
+    padding: 5%;
+    height: 175px;
+  }
+  
+  .format-about-me {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .format-about-me img {
+    border-radius: 50%;
+    float: left;
+    width: 20%;
+    padding-left: 5%;
+  }
+  
+  .format-about-me p {
+    float: right;
+    width: 60%;
+    padding: 0 5% 0 5%;
+  }
+  
+  section article {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+  }
+  
+  .article-format {
+    text-align: center;
+  }
+  
+  .article-format p, h3, h4 {
+    text-align: left;
+    margin: 0 4% 0 4%;
+  }*/
+  /************************************/
+  /* MAIN BODY SECTION - BLOG */
+  /************************************/
+  /*div {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  */
+  /*********************************************/
+  /* MAIN BODY SECTIONS - MAIN PORTFOLIO PAGE */
+  /********************************************/
+}
+/* line 194, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice #admin-links, .alert #admin-links {
+  border-top: 1px solid border;
+  border-bottom: 1px solid border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+/* line 201, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice #admin-links a, .alert #admin-links a {
+  color: light;
+  margin: 0 1em;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 210, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice .center-image img, .alert .center-image img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 215, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice .title-format h3, .alert .title-format h3 {
+  color: #b24569;
+}
+/* line 219, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice .date, .alert .date {
+  border-bottom: 1px solid #E6E6E6;
+  display: block;
+  font-size: 17px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  padding: 0px;
+  font-weight: 600;
+}
+
+/* line 236, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+/* line 246, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 262, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 270, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* line 277, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+/* line 283, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 299, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 310, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/******************************/
+/*   HERO                     */
+/*****************************/
+/* line 323, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hero {
+  width: 100%;
+  display: block;
+}
+
+/* line 330, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+/************************************/
+/* ABOUT IMAGE PAGE */
+/************************************/
+/************************************/
+/* FOOTER */
+/************************************/
+/* line 354, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+footer {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+  height: 3%;
+  bottom: 0;
+}
+
+/* line 363, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+footer section {
+  float: right;
+  width: 10%;
+  margin: 0;
+}
+
+/* line 369, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+footer section a {
+  padding: 0 1% .5% 1%;
+}
+
+/* line 373, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+footer p {
+  float: left;
+  /*width: 90%;*/
+}
