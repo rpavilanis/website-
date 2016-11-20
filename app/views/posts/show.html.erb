@@ -1,8 +1,8 @@
 <article class="blog-format">
 <div>
-    <%= image_tag(@post.picture.url(:large)), :class => center-image %>
+    <%= image_tag(@post.picture.url(:large), :class => center-image) %>
     <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
-    <h3 class="title-format"><%= @post.title %></h3>
+    <h3 class="title-format"><%= @post.title.upcase %></h3>
 </div>
 
 <div>
