@@ -2,7 +2,7 @@
     <% @projects.each do |project| %>
     <article class="hovereffect column">
         <%= link_to image_tag(project.picture.url(:medium)), project %>
-        <h2><%= project.title  %></h2>
+        <%= project.title  %>
             <div class="overlay">
               <br>
       				<h2><%= link_to project.title, project %></h2>

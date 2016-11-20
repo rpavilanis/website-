@@ -2,7 +2,6 @@
   <% @posts.each do |post| %>
     <article class="hovereffect column">
       <%= link_to image_tag(post.picture.url(:medium)), post %>
-      <h2><%= post.title %></h2>
       <div class="overlay">
         <br>
         <h2><%= link_to post.title, post %></h2>
