@@ -7,10 +7,13 @@
 <section class="row small-up-1 medium-up-2 large-up-3">
   <h3> Recent Projects </h3>
     <% @projects.each do |project| %>
-      <article class="column">
-      <%= link_to image_tag(project.picture.url(:thumb)), project %>
-      <h4> <%= link_to project.title, project %> </h4>
-      <h5> <%= project.created_at.strftime("%A, %b, %d") %> </h5>
+      <article class="hovereffect column">
+        <%= link_to image_tag(project.picture.url(:medium)), project %>
+        <div class="overlay">
+          <br>
+          <h4><%= link_to project.title, project %></h4>
+          <h5><%= project.created_at.strftime("%A, %b, %d") %></h5>
+        </div>
       </article>
     <% end  %>
 </section>
@@ -20,10 +23,13 @@
 <section class="row small-up-1 medium-up-2 large-up-3">
   <h3> Recent Posts </h3>
     <% @posts.each do |post| %>
-      <article class="column">
-      <%= link_to image_tag(post.picture.url(:thumb)), post %>
-      <h4><a href='#anchor1'> <%= link_to post.title, post %> </a></h4>
-      <h5> <%= post.created_at.strftime("%A, %b, %d") %> </h5>
+      <article class="hovereffect column">
+        <%= link_to image_tag(post.picture.url(:medium)), post %>
+        <div class="overlay">
+          <br>
+          <h4><%= link_to post.title, post %></h4>
+          <h5><%= post.created_at.strftime("%A, %b, %d") %></h5>
+        </div>
       </article>
     <% end  %>
 </section>
