@@ -8,6 +8,7 @@
 
 <div>
     <%= markdown @project.description %>
+    <p><%= @project.skills %></p>
   <div class="button-wrapper">
     <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %></a>
   </div>
