@@ -8,9 +8,9 @@
         <p><%= post.created_at.strftime("%A, %b, %d") %></p>
       </div>
     </article>
+    <p class="panel">
+    <strong class="show-for-touch"><%= post.title %></strong>
+    </p>
   <% end %>
-  <p class="panel">
-  <strong class="show-for-touch"><%= post.title %></strong>
-  </p>
 </div>
 <%= will_paginate @posts %>
