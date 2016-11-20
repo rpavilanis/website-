@@ -190,6 +190,11 @@ section article {
   display: inline-block;
 }
 */
+
+.blog-format {
+  width: 70%;
+}
+
 .blog-format p {
   padding-left: 4%;
   font-size: 1.25rem;
@@ -215,12 +220,12 @@ section article {
   text-decoration: none;
 }
 
-img.center-image {
+.center-image {
   display: block;
   margin: 0 auto;
 }
 
-.title-format {
+.title-format h3 {
   color: #b24569;
 }
 
