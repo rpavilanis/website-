@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'welcome#index'
 
-  get "/welcome/:page" => "pages#show"
+  get "/welcome/:page" => "welcome#show", as: 'about'
 
   resources :posts
   resources :projects
