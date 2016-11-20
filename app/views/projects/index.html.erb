@@ -4,7 +4,7 @@
         <%= link_to image_tag(project.picture.url(:medium)), project %>
             <div class="overlay">
       				<h2><%= link_to project.title, project %></h2>
-              <p><%= post.created_at.strftime("%A, %b, %d") %></p>
+              <p><%= project.created_at.strftime("%A, %b, %d") %></p>
             </div>
     </article>
   <% end %>
