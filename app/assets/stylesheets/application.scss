@@ -301,25 +301,29 @@ article.column {
 /*   HERO                     */
 /*****************************/
  .hero {
-   background-size: cover;
-   background-position: center;
+  //  background-size: cover;
+  //  background-position: center;
+   width: 100%;
+   display: block;
 
  }
- .hero {
-   background-image: url('Banner.png');
+ .hero-image {
+  //  background-image: url('Banner.png');
+  width: 100%;
+  display: block;
  }
 
- .hero .wrapper {
-   padding: 2em;
- }
-
- .hero .wrapper div {
-   background-color: #FFF2E7;
-   opacity: 0.7;
-   border-radius: 1em;
-   color: black;
-   float: right;
- }
+ // .hero .wrapper {
+ //   padding: 2em;
+ // }
+ //
+ // .hero .wrapper div {
+ //   background-color: #FFF2E7;
+ //   opacity: 0.7;
+ //   border-radius: 1em;
+ //   color: black;
+ //   float: right;
+ // }
 
 
 /************************************/
