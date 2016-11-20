@@ -14,7 +14,7 @@
         <%= link_to image_tag(project.picture.url(:medium)), project %>
         <div class="overlay">
           <br>
-          <h2 class="info"><%= link_to project.title, project %></h2>
+          <h2><%= link_to project.title, project, :class => 'info' %></h2>
           <p><%= project.created_at.strftime("%A, %b, %d") %></p>
         </div>
       </article>
@@ -30,7 +30,7 @@
         <%= link_to image_tag(post.picture.url(:medium)), post %>
         <div class="overlay">
           <br>
-          <h2 class="info"><%= link_to post.title, post %></h2>
+          <h2><%= link_to post.title, post, :class => 'info' %></h2>
           <p><%= post.created_at.strftime("%A, %b, %d") %></p>
         </div>
       </article>
