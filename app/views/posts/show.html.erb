@@ -1,9 +1,7 @@
-<article class="blog-format">
-  <div class="title-format">
-      <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
-      <%= image_tag(@post.picture.url(:large), :class => "center-image") %>
-      <h3><%= @post.title.upcase %></h3>
-  </div>
+<article class="blog-format center-image">
+  <%= image_tag @post.picture.url(:large) %>
+  <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
+  <h3 class="title-format"><%= @post.title.upcase %></h3>
   <p><%= markdown @post.content %></p>
 </article>
 
