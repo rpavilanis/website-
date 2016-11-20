@@ -1,12 +1,12 @@
 <article class="row center-image">
-  <%= image_tag @post.picture.url(:large) %>
 
-  <div class="small-3 columns title-format">
+  <div class="small-4 columns title-format">
     <span class="date"><%= @post.created_at.strftime("%A, %b, %d") %> </span>
     <h3><%= @post.title.upcase %></h3>
+    <%= image_tag @post.picture.url(:large) %>
   </div>
 
-  <div class="small-9 columns">
+  <div class="small-8 columns">
     <p><%= markdown @post.content %></p>
   </div>
 </article>
