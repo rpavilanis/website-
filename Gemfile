@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+# ping heroku
+gem 'dynopoker'
+# amazon web servers
 gem 'aws-sdk'
 # add photos
 gem 'paperclip'
