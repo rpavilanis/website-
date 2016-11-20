@@ -7,10 +7,10 @@
         <h2><%= link_to post.title, post %></h2>
         <p><%= post.created_at.strftime("%A, %b, %d") %></p>
       </div>
+      <p class="panel">
+      <strong class="show-for-touch"><%= post.title %></strong>
+      </p>
     </article>
-    <p class="panel">
-    <strong class="show-for-touch"><%= post.title %></strong>
-    </p>
   <% end %>
 </div>
 <%= will_paginate @posts %>
