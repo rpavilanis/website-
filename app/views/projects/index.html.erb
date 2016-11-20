@@ -3,6 +3,7 @@
     <article class="hovereffect column">
         <%= link_to image_tag(project.picture.url(:medium)), project %>
             <div class="overlay">
+              <br>
       				<h2><%= link_to project.title, project %></h2>
               <p><%= project.created_at.strftime("%A, %b, %d") %></p>
             </div>
