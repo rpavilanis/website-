@@ -1,16 +1,25 @@
 @import url('foundation.css');
 @import url('foundation-icons.css');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Economica|Lato');
 @import url('pygments');
 
 
-html {
-font: normal normal 14px/1 "Josefin Sans";
-/*, Helvetica, Arial, sans-serif;*/
-}
 /************************************/
 /* NAVIGATION BAR AND HEADER SECTION */
 /************************************/
+body {
+  margin-left: .5%;
+  margin-right: .5%;
+  font-family: 'Lato';
+}
+
+p, h4, h5 {
+  font-family: 'Lato';
+}
+
+h1, h2, h3 {
+  font-family: 'Economica';
+}
 
 .social-media-container {
   width: 100%;
@@ -34,6 +43,8 @@ font: normal normal 14px/1 "Josefin Sans";
 }*/
 
 .navigation-container {
+  margin-left: 2.5%;
+  margin-right: auto;
   width: 100%;
   height: 10%;
   text-align:center;
@@ -58,8 +69,8 @@ font: normal normal 14px/1 "Josefin Sans";
 /************************************/
 .navigation-container li a {
   color: #000000;
-  font-size: 30px;
-  font-family: 'Amatic SC';
+  font-size: 35px;
+  font-family: 'Economica';
   text-decoration: none;
   text-align: center;
 }
@@ -113,12 +124,9 @@ a:link {
 /************************************/
 /* MAIN BODY SECTION - INDEX.HTML */
 /************************************/
-/*body {
-  margin-left: .5%;
-  margin-right: .5%;
-}
 
-h2 {
+
+/*h2 {
   font-family: 'Amatic SC';
   font-size: 2em;
   text-align: left;
