@@ -189,7 +189,7 @@ section article {
   margin: 0;
   display: inline-block;
 }
-
+*/
 .blog-format p {
   padding-left: 4%;
   font-size: 1.25rem;
@@ -199,11 +199,6 @@ section article {
   font-size: 1.75rem;
 }
 
-.large-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 #admin-links {
   border-top: 1px solid border;
   border-bottom: 1px solid border;
@@ -218,6 +213,28 @@ section article {
   font-size: .8em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+img.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.title-format {
+  color: #b24569;
+}
+
+.date {
+  border-bottom: 1px solid #E6E6E6
+  display: block;
+    font-size: 17px;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    padding: 0px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 /*********************************************/
