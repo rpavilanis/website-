@@ -21,6 +21,11 @@ h1, h2, h3 {
   font-family: 'Economica';
 }
 
+div article {
+  margin: 3em 0 3em 0;
+  padding: 0 3em 0 3em;
+}
+
 .social-media-container {
   width: 100%;
   text-align: center;
@@ -172,10 +177,7 @@ section article {
   margin: 0 4% 0 4%;
 }*/
 
-article.column {
-  margin: 3em 0 3em 0;
-  padding: 0 3em 0 3em;
-}
+
 
 /************************************/
 /* MAIN BODY SECTION - BLOG */
