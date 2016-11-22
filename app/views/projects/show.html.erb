@@ -1,18 +1,24 @@
-<article class="blog-format">
-<div>
-    <a name="anchor1"></a>
-    <%= image_tag @project.picture.url(:large) %>
-    <h4><%= @project.created_at.strftime("%A, %b, %d") %> </h4>
-    <h3><%= @project.title %></h3>
-</div>
+<article class="row center-image">
 
-<div>
-    <%= markdown @project.description %>
-    <p><%= @project.skills %></p>
-  <div class="button-wrapper">
-    <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %></a>
+  <div class="small-4 columns title-format">
+    <br><br>
+    <span class="date"><%= @project.created_at.strftime("%A, %b, %d") %> </span>
+    <br>
+    <h3><%= @project.title.upcase %></h3>
+    <br>
+    <%= image_tag @project.picture.url(:large) %>
   </div>
-</div>
+
+  <div class="small-8 columns">
+      <p><%= markdown @project.description %></p>
+      <p>Skills: <%= @project.skills %></p>
+    <div class="button-wrapper">
+      <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %>'s Heroku page. </a>
+    </div>
+    <div class="button-wrapper">
+      <a href="<%= @project.github %>" class="project_button" target="_blank"> Visit <%= @project.title %>'s Github page.</a>
+    </div>
+  </div>
 </article>
 
 <% if user_signed_in? %>
@@ -22,18 +28,22 @@
   </div>
 <% end  %>
 
-<div id="share_box">
-  <p>Share <%= @project.title %></p>
-  <!-- Twitter -->
-  <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-    <i class="fa fa-twitter"></i>
-  </a>
-  <!-- Facebook -->
-  <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-    <i class="fa fa-facebook"></i>
-  </a>
-  <!-- Google Plus -->
-  <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-    <i class="fa fa-google-plus"></i>
-  </a>
-</div>
+<!-- <div class="hr-style">
+  <hr>
+  <div id="share_box">
+    <p>Share <%= @project.title %></p>
+
+    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-twitter"></i>
+    </a>
+
+    <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-facebook"></i>
+    </a>
+
+    <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= @project.title %> by @rachelpavilanis - &amp;url='<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-google-plus"></i>
+    </a>
+    <hr>
+  </div>
+</div> -->
