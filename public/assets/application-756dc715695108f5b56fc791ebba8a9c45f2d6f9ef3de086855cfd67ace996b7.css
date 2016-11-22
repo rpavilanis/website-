@@ -1,0 +1,700 @@
+@import url("foundation.css");
+@import url("foundation-icons.css");
+@import url("foundation/components/visibility");
+@import url("https://fonts.googleapis.com/css?family=Economica|Lato");
+@import url("pygments");
+/*
+
+        Creating a sprite from following images:
+
+        app/assets/images/sprites/social-share-button/baidu.png (16x16)
+        app/assets/images/sprites/social-share-button/delicious.png (16x16)
+        app/assets/images/sprites/social-share-button/douban.png (16x16)
+        app/assets/images/sprites/social-share-button/email.png (16x16)
+        app/assets/images/sprites/social-share-button/facebook.png (16x16)
+        app/assets/images/sprites/social-share-button/flickr.png (16x16)
+        app/assets/images/sprites/social-share-button/google_bookmark.png (16x16)
+        app/assets/images/sprites/social-share-button/google_plus.png (16x16)
+        app/assets/images/sprites/social-share-button/kaixin001.png (16x16)
+        app/assets/images/sprites/social-share-button/pinterest.png (16x16)
+        app/assets/images/sprites/social-share-button/plurk.png (16x16)
+        app/assets/images/sprites/social-share-button/qq.png (16x16)
+        app/assets/images/sprites/social-share-button/renren.png (16x16)
+        app/assets/images/sprites/social-share-button/tqq.png (16x16)
+        app/assets/images/sprites/social-share-button/tumblr.png (16x16)
+        app/assets/images/sprites/social-share-button/twitter.png (16x16)
+        app/assets/images/sprites/social-share-button/weibo.png (16x16)
+
+        Output files:
+          app/assets/images/sprites/social-share-button.png
+          app/assets/stylesheets/social-share-button.scss
+
+        Output size:
+          80x64
+
+*/
+/* line 31, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-baidu {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px 0px no-repeat;
+}
+
+/* line 32, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-delicious {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px 0px no-repeat;
+}
+
+/* line 33, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-douban {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -16px no-repeat;
+}
+
+/* line 34, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-email {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -16px no-repeat;
+}
+
+/* line 35, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-facebook {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px 0px no-repeat;
+}
+
+/* line 36, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-flickr {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -16px no-repeat;
+}
+
+/* line 37, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-google_bookmark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -32px no-repeat;
+}
+
+/* line 38, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-google_plus {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -32px no-repeat;
+}
+
+/* line 39, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-kaixin001 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -32px no-repeat;
+}
+
+/* line 40, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-pinterest {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px 0px no-repeat;
+}
+
+/* line 41, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-plurk {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -16px no-repeat;
+}
+
+/* line 42, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-qq {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -32px no-repeat;
+}
+
+/* line 43, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-renren {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -48px no-repeat;
+}
+
+/* line 44, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-tqq {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -48px no-repeat;
+}
+
+/* line 45, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-tumblr {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -48px no-repeat;
+}
+
+/* line 46, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-twitter {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -48px no-repeat;
+}
+
+/* line 47, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-weibo {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -64px 0px no-repeat;
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  /* line 50, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-baidu {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 51, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-delicious {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 52, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-douban {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 53, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-email {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 54, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-facebook {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 55, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-flickr {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 56, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-google_bookmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 57, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-google_plus {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 58, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-kaixin001 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 59, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-pinterest {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 60, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-plurk {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 61, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-qq {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 62, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-renren {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 63, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-tqq {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 64, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-tumblr {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 65, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-twitter {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 66, /Users/Rachel/.rvm/gems/ruby-2.3.0@rails_gemset/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-weibo {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -64px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+}
+/***********************************/
+/* MAIN BODY STYLING              */
+/**********************************/
+/* line 13, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+html, body {
+  margin: 0 .5% 0 .5%;
+  height: 100%;
+  font-family: 'Lato';
+}
+
+/* line 19, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+p, h4, h5 {
+  font-family: 'Lato';
+}
+
+/* line 23, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+h1, h2, h3 {
+  font-family: 'Economica';
+}
+
+/* line 27, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+div article {
+  margin: 3em 0 3em 0;
+  padding: 0 3em 0 3em;
+}
+
+/* line 32, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+/************************************/
+/* NAVIGATION BAR AND HEADER SECTION */
+/************************************/
+/* line 41, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 47, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container li {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+/* line 53, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 58, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container i {
+  padding: 1em .5em;
+}
+/* line 60, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container i:hover {
+  cursor: pointer;
+  color: #b24569;
+}
+
+/*header section {
+  background-color: #b24569;
+}*/
+/* line 70, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container {
+  margin-left: 2.5%;
+  margin-right: auto;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  /*position: fixed;*/
+  /*background-color: #fff796;*/
+}
+
+/* line 80, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li {
+  list-style-type: none;
+  padding: 0 2% 0 2%;
+  display: inline-block;
+}
+
+/* line 86, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container ul {
+  padding: 0 0 2% 0;
+  margin: 0;
+}
+
+/************************************/
+/* LINKS AND BUTTONS */
+/************************************/
+/* line 94, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li a {
+  color: #000000;
+  font-size: 75%;
+  font-family: 'Economica';
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 102, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container img {
+  padding-left: 1.75%;
+}
+
+/* line 106, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.social-media-container a {
+  padding: 0 5px 0 5px;
+}
+
+/* line 110, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.navigation-container li a:hover {
+  color: #b24569;
+}
+
+/* line 114, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+a:hover {
+  color: #4fb1cc;
+}
+
+/* line 118, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 123, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.project_button {
+  background: highlight;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+/* line 131, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+
+/* line 136, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/************************************/
+/* MAIN BODY SECTION - BLOG */
+/***********************************/
+/* line 146, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#admin-links {
+  border-top: 1px solid border;
+  border-bottom: 1px solid border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+
+/* line 153, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#admin-links a {
+  color: light;
+  margin: 0 1em;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 162, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.center-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 167, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.title-format h3 {
+  color: #b24569;
+}
+
+/* line 171, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.date {
+  border-bottom: 1px solid #E6E6E6;
+  display: block;
+  font-size: 17px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  padding: 0px;
+  font-weight: 600;
+}
+
+/* line 183, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#share_box {
+  text-align: center;
+}
+/* line 185, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#share_box p {
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+/* line 192, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#share_box i {
+  padding: 1em 1.5em;
+}
+/* line 194, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#share_box i:hover {
+  cursor: pointer;
+  color: #b24569;
+}
+
+/* line 201, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hr-style hr {
+  margin: 3em auto;
+  width: 5em;
+}
+
+/* line 206, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.comments {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+/**********************************/
+/* MAIN BODY SECTIONS - MAIN PORTFOLIO PAGE AND BLOG PAGES */
+/**********************************/
+/* line 217, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+/* line 227, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 243, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 251, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* line 258, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+/* line 264, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 280, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 291, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/******************************/
+/*   HERO FRONT              */
+/*****************************/
+/* line 302, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hero {
+  width: 100%;
+  display: block;
+}
+
+/* line 308, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+/*********************************/
+/* ABOUT IMAGE PAGE */
+/*********************************/
+/************************************/
+/* FOOTER */
+/***** ****************************/
+/* line 321, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+.push {
+  height: 50px;
+}
+
+/* line 325, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#main_footer {
+  padding: .5em .5%;
+}
+/* line 327, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#main_footer .copyright {
+  float: left;
+  font-size: .9em;
+  margin: 0;
+  height: 50px;
+}
+/* line 333, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#main_footer nav {
+  float: right;
+}
+/* line 335, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#main_footer nav i {
+  margin-left: 1em;
+  padding-top: .2em;
+}
+/* line 338, /Users/Rachel/Dropbox/Ada/rachelpav/app/assets/stylesheets/application.scss */
+#main_footer nav i:hover {
+  color: #b24569;
+  cursor: pointer;
+}

@@ -20,26 +20,26 @@
   </div>
 <% end  %>
 
-<div class="hr-style">
+<!-- <div class="hr-style">
   <hr>
   <div id="share_box">
     <p>Share <%= @post.title %></p>
-    <!-- Twitter -->
-    <a onclick="javascript:window.open('http://twitter.com/share?text= <%= @post.title %> by @rachelpavilanis - &amp;url='<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+
+    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @rachelpavilanis - &amp;url='<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
       <i class="fa fa-twitter"></i>
     </a>
-    <!-- Facebook -->
+
     <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<%= @post.title %> by @rachelpavilanis - &amp;url='<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
       <i class="fa fa-facebook"></i>
     </a>
-    <!-- Google Plus -->
+
     <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= @post.title %> by @rachelpavilanis - &amp;url='<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
       <i class="fa fa-google-plus"></i>
     </a>
     <hr>
   </div>
-</div>
+</div> -->
 
-<div class="comments">
+<div class="format-comments">
   <%= render 'disqus' %>
 </div>
