@@ -9,15 +9,14 @@
     <%= image_tag @project.picture.url(:large) %>
   </div>
 
-  <div class="small-8 columns">
+  <div class="small-8 columns padding-top">
       <p><%= markdown @project.description %></p>
       <p>Skills: <%= @project.skills %></p>
-    <div class="button-wrapper">
-      <a href="<%= @project.link %>" class="project_button" target="_blank"> Visit <%= @project.title %>'s Heroku page. </a>
-    </div>
-    <div class="button-wrapper">
-      <a href="<%= @project.github %>" class="project_button" target="_blank"> Visit <%= @project.title %>'s Github page.</a>
-    </div>
+    <ul>
+      <li><a href="<%= @project.link %>" class="button" target="_blank"> Visit <%= @project.title %>'s Heroku page. </a></li>
+
+      <li><a href="<%= @project.github %>" class="button" target="_blank"> Visit <%= @project.title %>'s Github page.</a></li>
+    </ul>
   </div>
 </article>
 
