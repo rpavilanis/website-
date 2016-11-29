@@ -108,10 +108,6 @@ a:hover {
   color: #E9E9E9;
 }
 
-a:link {
-  color: #000000;
-  text-decoration: none;
-}
 
 .button {
   display: block;
@@ -127,6 +123,11 @@ a:link {
   background-color: #b24569;
   color: white;
 
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
 }
 
 ul li {
