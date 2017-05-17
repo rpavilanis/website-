@@ -13,50 +13,51 @@
   </head>
 
   <body>
-      <header>
-        <section class="social-media-container">
-          <ul>
-            <li><a href = "mailto:rachel@rachelpav.com" target="_blank"><i class="fa fa-envelope-open"></i></a></li>
-            <li><a href = "https://twitter.com/rachelpavilanis" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href = "https://www.linkedin.com/in/rachel-pavilanis-0839a878" target="_blank"><i class="fa  fa-linkedin"></i></a></li>
-            <li><a href = "https://github.com/rpavilanis" target="_blank"><i class="fa fa-github"></i></a></li>
-          </ul>
-        </section>
+    <div class="wrapper">
+        <header>
+          <section class="social-media-container">
+            <ul>
+              <li><a href = "mailto:rachel@rachelpav.com" target="_blank"><i class="fa fa-envelope-open"></i></a></li>
+              <li><a href = "https://twitter.com/rachelpavilanis" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href = "https://www.linkedin.com/in/rachel-pavilanis-0839a878" target="_blank"><i class="fa  fa-linkedin"></i></a></li>
+              <li><a href = "https://github.com/rpavilanis" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+          </section>
 
-        <nav class="navigation-container">
-          <ul>
-            <li><h2><%= link_to "About", about_path(:page => 'about.html') %></h2></li>
-            <li><h2><%= link_to "Blog", posts_path %></h2></li>
-            <li><h1><strong><%= link_to "RACHEL PAVILANIS", root_path %></strong></h1></li>
-            <li><h2><%= link_to "Portfolio", projects_path %></h2></li>
-            <li><h2><%= link_to "Resume", about_path(:page => 'resume.html') %></h2></li>
-          <% if user_signed_in? %>
-            <li><h2><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></h2></li>
-          <% end %>
-          </ul>
-        </nav>
-      </header>
-      <% if notice %>
-        <p class="notice"><%= notice %></p>
-      <% elsif alert %>
-        <p class="alert"><%= alert %></p>
-      <% end  %>
-      <%= yield %>
+          <nav class="navigation-container">
+            <ul>
+              <li><h2><%= link_to "About", about_path(:page => 'about.html') %></h2></li>
+              <li><h2><%= link_to "Blog", posts_path %></h2></li>
+              <li><h1><strong><%= link_to "RACHEL PAVILANIS", root_path %></strong></h1></li>
+              <li><h2><%= link_to "Portfolio", projects_path %></h2></li>
+              <li><h2><a href = "https://www.dropbox.com/s/t0fxt6bdmpnjh8m/Resume.pdf?dl=0" target="_blank">Resume</a></h2></li>
+            <% if user_signed_in? %>
+              <li><h2><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></h2></li>
+            <% end %>
+            </ul>
+          </nav>
+        </header>
+        <% if notice %>
+          <p class="notice"><%= notice %></p>
+        <% elsif alert %>
+          <p class="alert"><%= alert %></p>
+        <% end  %>
+        <%= yield %>
       <div class="push"></div>
     </div>
-    <footer id="main_footer">
-      <p class="copyright">
-        &copy;2016 Rachel Pavilanis
-      </p>
+      <footer id="main_footer">
+        <p class="copyright">
+          &copy;2016 Rachel Pavilanis
+        </p>
 
-      <nav>
-        <a href = "mailto:rachel@rachelpav.com" target="_blank"><i class="fa fa-envelope-open"></i></a>
-        <a href = "https://twitter.com/rachelpavilanis" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href = "https://www.linkedin.com/in/rachel-pavilanis-0839a878" target="_blank"><i class="fa  fa-linkedin"></i></a>
-        <a href = "https://github.com/rpavilanis" target="_blank"><i class="fa fa-github"></i></a>
-      </nav>
+        <nav>
+          <a href = "mailto:rachel@rachelpav.com" target="_blank"><i class="fa fa-envelope-open"></i></a>
+          <a href = "https://twitter.com/rachelpavilanis" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href = "https://www.linkedin.com/in/rachel-pavilanis-0839a878" target="_blank"><i class="fa  fa-linkedin"></i></a>
+          <a href = "https://github.com/rpavilanis" target="_blank"><i class="fa fa-github"></i></a>
+        </nav>
 
-    </footer>
+      </footer>
 
   </body>
 </html>
